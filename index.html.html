@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Study Lofi</title>
+  <!-- Tailwind lewat CDN, jadi semua styling memakai class di HTML (tanpa file CSS) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Pixelify+Sans:wght@500;700&display=swap">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+</head>
+<body class="min-h-screen bg-[#1b1530] bg-gradient-to-b from-[#1b1530] via-[#2a1f45] to-[#4a2c4f] font-['Nunito'] text-rose-50">
+
+  <!-- HEADER: logo di kiri, menu navigasi di kanan (Flexbox) -->
+  <header class="border-b border-white/10">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-5 py-4">
+      <a href="#tentang" class="font-['Pixelify_Sans'] text-2xl font-bold text-amber-200">🎧 Study Lofi</a>
+      <nav aria-label="Menu utama">
+        <ul class="flex gap-4 text-sm font-semibold text-rose-100/80 sm:gap-6">
+          <li><a href="#tentang" class="hover:text-amber-200">Tentang</a></li>
+          <li><a href="#cara" class="hover:text-amber-200">Cara pakai</a></li>
+          <li><a href="#suasana" class="hover:text-amber-200">Suasana</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN: berisi 3 section -->
+  <main class="mx-auto max-w-5xl px-5">
+
+    <!-- Section 1: Tentang (teks kiri, gambar timer kanan) -->
+    <section id="tentang" class="flex flex-col items-center gap-10 py-16 md:flex-row md:justify-between">
+      <div class="max-w-md">
+        <h1 class="font-['Pixelify_Sans'] text-4xl font-bold leading-tight text-amber-100 sm:text-5xl">Belajar lebih fokus, tanpa bikin capek.</h1>
+        <p class="mt-4 leading-relaxed text-rose-100/80">Study Lofi memakai teknik Pomodoro: belajar 25 menit, lalu istirahat 5 menit. Ditemani musik lofi dan suara hujan, belajar jadi terasa lebih santai.</p>
+        <a href="#cara" class="mt-6 inline-block rounded-xl bg-rose-300 px-6 py-3 font-extrabold text-[#1b1530] hover:bg-rose-200">Lihat cara pakainya</a>
+      </div>
+      <div class="flex h-64 w-64 flex-none flex-col items-center justify-center rounded-full border-8 border-rose-300 bg-white/5">
+        <span class="font-['Pixelify_Sans'] text-6xl font-bold text-amber-100">25:00</span>
+        <span class="mt-1 text-sm font-semibold text-rose-200">Fokus</span>
+      </div>
+    </section>
+
+    <!-- Section 2: Cara pakai (4 kartu, Grid) -->
+    <section id="cara" class="py-12">
+      <h2 class="font-['Pixelify_Sans'] text-3xl font-bold text-amber-100">Cara pakai Pomodoro</h2>
+      <p class="mt-2 text-rose-100/70">Ikuti empat langkah ini dan ulangi sepanjang sesi belajarmu.</p>
+      <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+          <div class="text-3xl">📚</div>
+          <h3 class="mt-3 font-bold text-rose-200">Fokus 25 menit</h3>
+          <p class="mt-1 text-sm text-rose-100/70">Kerjakan satu tugas saja, simpan HP jauh-jauh.</p>
+        </article>
+        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+          <div class="text-3xl">☕</div>
+          <h3 class="mt-3 font-bold text-teal-200">Istirahat 5 menit</h3>
+          <p class="mt-1 text-sm text-rose-100/70">Berdiri, minum air, regangkan badan.</p>
+        </article>
+        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+          <div class="text-3xl">🔁</div>
+          <h3 class="mt-3 font-bold text-rose-200">Ulangi 4 kali</h3>
+          <p class="mt-1 text-sm text-rose-100/70">Satu putaran fokus dan istirahat disebut satu sesi.</p>
+        </article>
+        <article class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+          <div class="text-3xl">🛋️</div>
+          <h3 class="mt-3 font-bold text-teal-200">Istirahat panjang 15 menit</h3>
+          <p class="mt-1 text-sm text-rose-100/70">Setelah empat sesi, istirahat lebih lama.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 3: Suasana (daftar musik dan suara latar) -->
+    <section id="suasana" class="py-12">
+      <h2 class="font-['Pixelify_Sans'] text-3xl font-bold text-amber-100">Pilih suasana belajarmu</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <div class="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10">
+          <h3 class="font-bold text-teal-200">Musik lofi</h3>
+          <ul class="mt-3 space-y-2 text-sm text-rose-100/80">
+            <li>🎹 Sore di Kos: piano santai, beat pelan</li>
+            <li>🔔 Hujan Malam: ambient tanpa drum</li>
+            <li>🎸 Kopi Pagi: gitar petik yang ceria</li>
+            <li>🌇 Senja Santai: swing dengan bass jalan</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10">
+          <h3 class="font-bold text-sky-200">Suara latar</h3>
+          <ul class="mt-3 space-y-2 text-sm text-rose-100/80">
+            <li>🌧️ Hujan</li>
+            <li>💧 Sungai</li>
+            <li>🌊 Ombak</li>
+            <li>🐦 Burung</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: 3 bagian sejajar (logo kiri, penjelasan tengah, info website kanan) -->
+  <footer class="mt-12 border-t border-white/10 bg-black/20">
+    <div class="mx-auto grid max-w-5xl gap-8 px-5 py-10 text-sm md:grid-cols-3">
+      <div>
+        <p class="font-['Pixelify_Sans'] text-2xl font-bold text-amber-200">🎧 Study Lofi</p>
+      </div>
+      <div>
+        <p class="leading-relaxed text-rose-100/70">Website sederhana tentang teknik belajar Pomodoro dengan suasana lofi yang menenangkan.</p>
+      </div>
+      <div class="text-rose-100/70 md:text-right">
+        <p class="font-bold text-rose-200">Info website</p>
+        <p class="mt-1">Tugas web statis (HTML + Tailwind CSS)</p>
+        <p>Cakrawala University · 2026</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
