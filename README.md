@@ -1,50 +1,16 @@
-# Study Lofi
+# React + Vite
 
-Halaman web statis bertema belajar dengan teknik Pomodoro dan suasana lofi. Dibuat sebagai tugas mata kuliah menggunakan **HTML** dan **Tailwind CSS**.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Tentang Website
+Currently, two official plugins are available:
 
-Study Lofi menjelaskan teknik Pomodoro (belajar 25 menit, istirahat 5 menit) dan menampilkan pilihan suasana belajar berupa musik lofi dan suara latar seperti hujan, sungai, ombak, dan burung.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Struktur Halaman
+## React Compiler
 
-| Bagian | Isi |
-| --- | --- |
-| Header | Logo di kiri dan menu navigasi di kanan |
-| Section Tentang | Penjelasan singkat dan tampilan timer 25:00 |
-| Section Cara pakai | Empat langkah Pomodoro dalam bentuk kartu |
-| Section Suasana | Daftar musik lofi dan suara latar |
-| Footer | Tiga bagian sejajar: logo, penjelasan singkat, info website |
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Teknologi
+## Expanding the ESLint configuration
 
-- HTML5 dengan tag semantik: `header`, `nav`, `main`, `section`, `article`, `footer`
-- Tailwind CSS (via CDN), tanpa file CSS terpisah
-- Layout menggunakan Flexbox dan Grid
-- Tanpa JavaScript
-
-## Cara Menjalankan
-
-1. Clone atau download repository ini.
-2. Buka file `index.html` di browser (Chrome, Edge, atau Firefox).
-3. Pastikan perangkat terhubung ke internet karena Tailwind dan font dimuat lewat CDN.
-
-## Struktur File
-
-```
-.
-├── index.html
-└── README.md
-```
-
-## Catatan Pengerjaan
-
-- Header dan footer menggunakan `display: flex` dan `grid` melalui class Tailwind (`flex`, `justify-between`, `grid`, `md:grid-cols-3`).
-- Tampilan responsif untuk layar HP, tablet, dan laptop.
-
-## Identitas
-
-- Nama: [isi nama kamu]
-- NIM: [isi NIM kamu]
-- Mata kuliah: [isi mata kuliah]
-- Kampus: Cakrawala University
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
